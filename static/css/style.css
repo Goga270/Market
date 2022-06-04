@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+html {
+    margin: auto;
+}
+
+body {
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 75px;
+    background: #222222;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_img {
+    width: 40px;
+    height: 30px;
+}
+
+.searh_img {
+    width: 26px;
+    height: 26px;
+    margin-left: 20px;
+}
+
+.menu_img {
+    width: 32px;
+    height: 23px;
+}
+
+.cart_img {
+    width: 32px;
+    height: 28px;
+    display: none;
+}
+
+.user_img {
+    width: 29px;
+    height: 29px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: none;
+}
+
+.leftHeader {
+    padding: 18px 16px ;
+}
+
+.rightHeader{
+    padding: 18px 16px;
+}
+
+@media (min-width: 768px) {
+    .leftHeader, .rightHeader{
+        padding: 18px 32px;
+    }
+
+    .user_img, .cart_img{
+        display: inline;
+    }
+}
+
+@media(min-width: 1600px) {
+    .leftHeader, .rightHeader{
+        padding: 18px 230px;
+    }
+}
+
+.brand{
+    width: 100%;
+    height: 363px;
+    display: flex;
+    flex-direction: row;
+}
+
+.brand_img{
+    width: 50%;
+    height: 100%;
+    display: none;
+}
+
+.brand_img img{
+    width: 100%;
+    height: 100%;
+}
+.brand_content{
+    width: 100%;
+    height: 100%;
+    background: #F1E4E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand_text{
+    display: flex;
+    height: 66px;
+
+}
+
+.brand_text p {
+    font-family: Lato;
+}
+.brand_text span{
+    color: #F16D7F;
+}
+
+.brand_text p:first-child {
+    font-size: 38px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.brand_text p:last-child {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.plank{
+    justify-content: start;
+    background: #F16D7F;
+    width: 12px;
+    height: 100%;
+    margin-right: 15px;
+}
+
+@media (min-width: 768px) {
+    .brand_content{
+        width: 50%;
+    }
+
+    .brand_img{
+        display: block;
+    }
+
+    .brand_text_secondary{
+        font-size: 24px;
+    }
+
+    .brand_text_title{
+        font-size: 44px;
+    }
+
+    .brand_text{
+        height: 92px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .brand{
+        height: 500px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .brand{
+        height: 764px;
+    }
+    .brand_content{
+        justify-content: start;
+    }
+
+    .brand_text{
+        margin-left: 64px;
+    }
+
+    .brand_text_secondary{
+        font-size: 32px;
+    }
+
+    .brand_text_title{
+        font-size: 48px;
+    }
+
+    .brand_text{
+        height: 93px;
+    }
+}
