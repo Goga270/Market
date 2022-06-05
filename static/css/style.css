@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-
 html {
     margin: auto;
 }
@@ -73,10 +72,12 @@ header {
 }
 
 .brand{
+
     width: 100%;
-    height: 363px;
+    height: inherit;
     display: flex;
     flex-direction: row;
+    position: absolute;
 }
 
 .brand_img{
@@ -153,12 +154,6 @@ header {
     }
 }
 
-@media (min-width: 1100px) {
-    .brand{
-        height: 500px;
-    }
-}
-
 @media (min-width: 1600px) {
     .brand{
         height: 764px;
@@ -182,4 +177,140 @@ header {
     .brand_text{
         height: 93px;
     }
+}
+
+.brandWrap{
+    height: 363px;
+    width: 100%;
+    position: relative;
+}
+
+.brandDark{
+    width: 100%;
+    height: inherit;
+    background: #222222;
+    opacity: 0.7;
+    position: absolute;
+}
+
+.menu {
+    background: white;
+    height: inherit;
+    width: inherit;
+    position: relative;
+    margin-left: auto;
+    z-index: 100;
+    right: 0;
+    box-shadow: 6px 4px 35px rgba(0,0,0,0.21);
+}
+
+.menu_container{
+    padding-left: 34px;
+    padding-right: 34px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.title{
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 24px;
+    padding-top: 31px;
+    margin-left: 34px;
+}
+
+.menu_title{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+}
+
+.element_list{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    display: block;
+    text-decoration: none;
+}
+
+.element_list a{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #6F6E6E;
+    text-decoration: none;
+    margin-left: 21px;
+}
+
+@media (min-width: 768px) {
+    .menu{
+        width: 232px;
+        height: auto;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    .brandWrap{
+        height: 764px;
+    }
+
+    .menu{
+        height: inherit;
+    }
+
+}
+
+.img_close_menu img{
+    position: absolute;
+    right: 0;
+    box-sizing: border-box;
+    padding-top: 16px;
+    padding-right: 16px;
+}
+
+.hidden{
+    display: none;
+}
+
+.menu_element_hidden{
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .menu_element_hidden{
+        display: none;
+    }
+}
+
+@media (min-width: 1100px) {
+    .brandWrap {
+        height: 500px;
+    }
+}
+
+.offersWrap{
+    margin-top: 64px;
+}
+
+.offers{
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(200px,1fr));
+    justify-items: center;
+}
+
+.element_offers{
+
+}
+
+.element_offers img{
 }
